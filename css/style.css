@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@200;300;400;500;600&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+
+
+
+}
+
+:root {
+    --brand: #D2312A;
+    --white: #fff;
+    --nav: #510000;
+    --body-black: rgb(9, 8, 8);
+    --GREYWHITE: rgb(212, 171, 184);
+    --gradient-background-image: radial-gradient(circle, #df2a20 65%, rgb(122, 126, 199) 1%,rgb(164, 161, 161) 1%,#e4b9b6  );
+    --buttom-color: #e50f04 ;
+    --nav-hover-color: white;
+    --bar:black;
+    --nav-bar-gradient: radial-gradient(circle,  #D2312A -10% , rgb(110, 134, 221)  , rgb(255, 255, 255));
+    }
+    body {
+        background-color: var(--body-black);
+        font-family: 'Poppins', sans-serif;
+    }
+    .container {
+        width: 800px;
+        margin: auto;
+    }
+    
+    .container2 {
+        width: 1320px;
+        margin: auto;
+    }
+    .flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .gap {
+        gap: 0px 20px;
+    }
+    .gap-nav {
+        gap: 30px;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+    }
+ 
+
+
+
+
+/* top css starts */
+
+.top {
+   display: none;
+}
+
+/* top css ends  */
+ 
+/* Header css starts  */
+.header {
+    background-color:var(--brand);
+    line-height: 45px;
+    z-index: 2;
+    border-radius: 10px;
+}
+
+
+
+.sticky {
+    position: sticky;
+    top: 0px;
+}
+
+
+.header ul li {
+    list-style: none;
+}
+
+.header ul a {
+    color: var(--nav);
+    font-size: 17px;
+    font-weight: 450;
+    transition: 0.5s;
+    position: relative;
+}
+
+.header ul a::before {
+    position: absolute;
+    content: '';
+    top: 130%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    transform: scale(0,1);
+    background-color: #510000;
+    transition: 0.5s;
+    border-radius: 10px;
+
+
+
+}
+
+.header ul a::after {
+    position: absolute;
+    content: '';
+    top: 17%;
+
+    left: 117%;
+    width: 2px;
+    height: 70%;
+    background-color: var(--bar);
+
+
+
+
+}
+
+.header ul a:hover::before {
+    position: absolute;
+
+    transform: scale(1,1);
+
+    background-color: var(--nav-hover-color);
+
+
+
+
+}
+
+.header ul a:hover {
+    color: var(--nav-hover-color);
+}
+
+
+
+
+
+.nav-icons i {
+    font-size: 23px;
+    font-weight: bold;
+    color: var(--nav);
+    transition: 0.5s;
+}
+
+.nav-icons i:hover {
+    color: var(--nav-hover-color);
+}
+
+/* header css ends  */
+
+/* banner css starts */
+
+.banner {
+    background-image: var(--gradient-background-image);
+    border-radius: 5px;
+    margin-top: 5px;
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.t-shirt {
+    object-fit: cover;
+    width: 300px;
+}
+
+.banner .ban-content {
+    text-align: center;
+color:white;
+position: relative;
+right: 200px;
+}
+
+.ban-content h2 {
+    font-size: 45px;
+}
+
+.ban-content p {
+    font-size: 25px;
+}
+
+.ban-content .btn {
+    background-color: var(--buttom-color);
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* bannner css ends  */
+
+/* bannner 2 css starts */
+
+.banner2 {
+    background-image: var(--nav-bar-gradient);
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+.ban2content {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+.ban2content h2 {
+    color: var(--white);
+    font-size: 45px;
+}
+
+.ban2content .btn {
+    color: var(--white);
+    font-size: 20px;
+    background-color: var(--buttom-color);
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.ban2img {
+    text-align: center;
+    font-size: 10px;
+
+
+
+}
+
+.ban2img .t-shirt {
+    position: relative;
+    left: 100px;
+
+}
+
+.ban2img .cap {
+    position: relative;
+    right: 80px;
+
+}
+
+/* ban2 css end  */
+
+/* product css starts  */
+.box1 {
+    background-color: var(--GREYWHITE);
+    width: 49.5%;
+    text-align: center;
+    padding: 20px 0px;
+    height: 52vh;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.box1 h2 {
+    font-size: 30px;
+}
+
+.box1 p {
+    font-size: 15px;
+}
+
+.box1 .btn {
+    background-color: var(--buttom-color);
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 20px;
+
+
+}
+
+.box1 img {
+    width: 24%;
+    margin-top: 10px;
+    position: relative;
+    left: 20px;
+    top: 24px;
+}
+
+.box2 {
+    background-color: var(--GREYWHITE);
+    width: 49.5%;
+    text-align: center;
+    padding: 20px 0px;
+    height: 53vh;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.box2 h2 {
+    font-size: 30px;
+}
+
+.box2 p {
+    font-size: 15px;
+}
+
+.box2 .btn {
+    background-color: var(--buttom-color);
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.box2 img {
+    width: 29%;
+    margin-top: 10px;
+    position: relative;
+    left: 5px;
+}
+
+
+
+.box3 {
+    background-image: var(--gradient-background-image);
+    width: 49.5%;
+    text-align: center;
+    padding: 20px 0px;
+   height: 52vh;
+    border-radius: 10px;
+    color: var(--white);
+}
+
+.box3 h2 {
+    font-size: 30px;
+}
+
+.box3 p {
+    font-size: 15px;
+}
+
+.box3 .btn {
+    background-color: var(--buttom-color);
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 15px;
+    color: black;
+
+}
+
+.box3 img {
+    width: 35%;
+    margin-top: 10px;
+    position: relative;
+    right: 10px;
+    top: 10px;
+}
+
+.box4 {
+    background-image: var(--gradient-background-image);
+    width: 49.5%;
+    text-align: center;
+    padding: 20px 0px;
+    height: 52vh;
+    border-radius: 10px;
+    color: var(--white);
+}
+
+.box4 h2 {
+    font-size: 30px;
+}
+
+.box4 p {
+    font-size: 15px;
+}
+
+.box4 .btn {
+    background-color: var(--buttom-color);
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 15px;
+    color: black;
+
+}
+
+.box4 img {
+    width: 30%;
+    margin-top: 10px;
+    position: relative;
+    left: 15px;
+    top: 10px;
+
+}
+
+
+

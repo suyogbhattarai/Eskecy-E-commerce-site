@@ -1,0 +1,82 @@
+@media(min-width:480px) and (max-width:700)
+{
+
+}
+@media(min-width:701px) and (max-width:1000)
+{
+    
+}
+@media(min-width:1001px) 
+{
+  
+.top {
+    color: #D2312A;
+    padding: 10px 20px;
+    display: inline;
+}
+
+.logo-top p {
+    transition: 0.5s;
+}
+
+.logo-top p:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.top p {
+    letter-spacing: 7px;
+}
+
+
+.nav-top ul li {
+    list-style: none;
+    
+}
+
+.nav-top a {
+    text-decoration: none;
+    color: var(--brand);
+    transition: 0.5s;
+    position: relative;
+}
+
+.nav-top a:hover {
+    color: white;
+    
+    
+}
+
+.nav-top a::before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    transform: scale(0,1);
+    background: #510000;
+    transition: 0.5s;
+    left: 0px;
+    top: 133%;
+    border-radius: 10px;
+    
+}
+
+.nav-top a::after {
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    background: red;
+
+    left: 110%;
+    top: 15%;
+    border-radius: 10px;
+}
+
+.nav-top a:hover::before {
+    content: '';
+    transform: scale(1,1);
+    background: white;
+    
+}  
+}
